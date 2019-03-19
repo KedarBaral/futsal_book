@@ -1,0 +1,23 @@
+{% extends 'futsal/base.html' %}
+
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>This is a detail page</h1>
+    {% for players in player %}
+    <ul>
+        <li>{{ players.name }}</li>
+        <li>{{ players.age }}</li>
+        <li>{{ players.place }}</li>
+        <li>{{ players.phone_no }}</li>
+        <li>{{ players.team }}</li>
+    </ul>
+    {% endfor %}
+</body>
+</html>
+{% endblock %}
+

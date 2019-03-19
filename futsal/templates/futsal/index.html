@@ -1,0 +1,16 @@
+{% extends 'futsal/base.html' %}
+
+{% block content %}
+
+<h4>List of all the players booked the futsal.</h4>
+
+{% for players in allPlayers %}
+<ul>
+   <li>{{ players.name }}</li>
+   <li>{{ players.age }}</li>
+   <li>{{ players.place }}</li>
+</ul>
+{% endfor %}
+
+{% endblock %}
+

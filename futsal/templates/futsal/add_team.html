@@ -1,0 +1,12 @@
+{% extends 'futsal/base.html' %}
+
+{% block content %}
+    <h2>Add new team</h2>
+        <form method="POST" class="post-form">
+            {% csrf_token %}
+            {{ form }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+
+{% endblock %}
+
